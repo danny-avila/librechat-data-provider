@@ -1,11 +1,10 @@
 {
-  "name": "@danny-avila/librechat-data-provider",
+  "name": "librechat-data-provider",
   "version": "0.1.0",
   "description": "data services for librechat apps",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "types": "types/",
-  "private": true,
   "scripts": {
     "clean": "rimraf dist",
     "build": "npm run clean && rollup -c --silent --bundleConfigAsCjs",
@@ -43,5 +42,8 @@
     "rollup": "^3.26.0",
     "rollup-plugin-typescript2": "^0.35.0",
     "typescript": "^5.0.4"
-  }
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  }  
 }
